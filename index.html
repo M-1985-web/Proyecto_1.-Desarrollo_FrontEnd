@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" 
+        crossorigin="anonymous" 
+        referrerpolicy="no-referrer"
+    />
+    <!--Fuente Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+    <!--Titulo-->
+    <title>Curriculum Vitae Web</title>
+
+    <!--Archivo CSS-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--BootsTrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+
+
+     <link rel="icon" type="image/x-icon" href="img/coffee.svg">
+
+    <!--favicon
+    <link rel="icon" type="image/x-icon" href="https://www.w3schools.com/images/favicon.ico">
+    -->
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Curriculum Vitae Web" />
+    <meta property="og:type" content="Curriculum Personalizable que lo podes adaptar para tu propio CV"/>
+    <meta property="og:url" content="http://127.0.0.1:5500/index.html" />
+    <meta property="og:image" content=" http://example.com/image.jpg" />
+    <meta property="og:description" content="Descripcion: Es un trabajo en donde tuvimos que desarrollar un documento Con Html, Css y Js"/>
+
+
+
+</head>
+<body>
+
+
+    <!-- MENU ENCABEZADO NAV    <a href="#">Antonio</a>  -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                
+                <img 
+                    src="img/foto-ticmaa_2.jpg" 
+                    alt=""
+                    weith="20px"
+                    height="40px"
+                >
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">Inicio</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">Sobre mi</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Skills</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">Curriculum</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">Portfolio</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+
+
+    
+
+
+
+    <!-- SECCION INICIO <img src="img/hero.png" alt="">-->
+    <section id="inicio" class="inicio">
+
+        <div class="contenido-banner">
+            
+            <div class="contenedor-img">
+                <img src="https://randomuser.me/api/portraits/men/17.jpg" alt="Foto de una persona">
+            </div><br><br>
+
+            <h1>Antonio Pérez</h1>
+            <h2>Desarrollador Web Front End</h2>
+
+            <div class="redes">
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
+                <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2  class="prueba">Sobre mí</h2><br>
+
+            <button type="button" class="btn btn-lg btn-info" data-bs-toggle="popover" data-bs-title="Botones Sobre mí" data-bs-content="Primer y segundo boton despliega informacion personal, el tercer boton contrae todo">Haga Click</button><br>
+
+            <p>
+                <button class="btn btn-success" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Click Conocer sobre mí</button>
+                <button class="btn btn-warning" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Click Conocer más</button>
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Alternar ambos elementos</button>
+            </p>
+            <div class="row">
+                <div class="col-6">
+                  <div class="collapse multi-collapse" id="multiCollapseExample1">
+                    <div class="card card-body">
+                    <p>
+                      <span>Hola. ¿Qué tal?, Mi nombre es Antonio Pérez</span>. Soy una persona perseverante, cooperativa y en constante aprendizaje. Estudio programación. Fan de las películas y series futuristas. Como deporte realizó caminatas y juego al fútbol con amigos. Estoy leyendo Homo Deus de Yuval Harari. Soy familiero. Mis padres me enseñaron a enfrentar la vida con esfuerzo y fortaleza. ¿Qué te motiva? mis dos hijos adolescentes, son el principal motor para salir adelante y desear un mejor estilo de vida. Este año comienzo mi Tecnicatura en Informática, me apasionan los desafíos, realice cursos y proyectos de Desarrollo Web, Data Sciencie y Analitycs. 
+                    </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="collapse multi-collapse" id="multiCollapseExample2">
+                    <div class="card card-body">
+                    <p>
+                      También estoy en busca de mi primer certificado de Inglés. Considero que los detalles, la comunicación y la pasión por el proceso de aprendizaje, son fundamentales para el éxito.  No tengo experiencia en el sector IT. En la empresa puedo contribuir, aprender, organizar, optimizar y obtener más destrezas, siempre cooperando con el equipo de trabajo.  Siento que Las habilidades blandas como las metodologías ágiles son primordiales en los procesos, son herramientas claves. Creo que la llegada de la pandemia, nos enseñó a tener más resiliencia para adaptarnos más rápido a los cambios. <br> Feliz día.
+                    </p>
+                    </div>
+                  </div>
+                </div>
+            </div><br><br>
+
+
+            <!--
+            <p><span>Hola, soy Antonio Pérez.</span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam unde soluta minima necessitatibus, voluptas consectetur vero officiis quas, explicabo deleniti repellendus aliquid debitis maiores numquam voluptate reprehenderit in delectus dolores.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid corporis qui provident, praesentium aliquam natus. Suscipit facere fugit, dolor mollitia nobis consectetur dolore reprehenderit, obcaecati temporibus repudiandae tenetur, similique architecto.</p>
+            <br><br>
+            -->
+
+            <!-- <div class="fila"> -->
+            
+                <!-- datos personales -->
+                <!--
+                <div class="col">
+                    
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños :</strong>
+                            <span>Cumpleaños :</span>
+                            <span>15-01-2058</span>
+                        </li>
+                        <li>
+                            <strong>Teléfono :</strong>
+                            <span>Teléfono :</span>
+                            <span>+549-1154545454</span>
+                        </li>
+                        <li>
+                            <strong>Email :</strong>
+                            <span>Email :</span>
+                            <span>mmm@example.com</span>
+                        </li>
+                        <li>
+                            <strong>Website :</strong>
+                            <span>Website :</span>
+                            <span>www.example.com</span>
+                        </li>
+                        <li>
+                            <strong>Dirección :</strong>
+                            <span>Dirección :</span>
+                            <span>1234 Cordoba, Argentina</span>
+                        </li>
+                        <li>
+                            <strong>Cargo :</strong>
+                            <span>Cargo :</span>
+                            <span>Freelance</span>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                -->
+                
+                <!-- intereses 
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                            <i class="fa-solid fa-gamepad"></i>
+                            <span>Juegos</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>Musica</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-brands fa-youtube"></i>
+                            <span>YouTube</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-film"></i>
+                            <span>Series</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>Deporte</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-book"></i>
+                            <span>Leer</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-chess-board"></i>
+                            <span>Ajedrez</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>Programar</span>
+                        </div>
+                        
+                    </div>
+                </div>
+                -->
+            <!--</div>-->
+            
+
+
+
+            <!--
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+            -->
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION Hard y Soft SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2  class="prueba">Skills</h2><br>
+            <div class="fila">
+                <!-- Hard Skills -->
+                <div class="col">
+                    <h3>Hard Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>89%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MySQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>81%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>JAVA</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Soft skills -->
+                <div class="col">
+                    <h3>Soft skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Scrum</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Resiliencia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2  class="prueba">Curriculum Vitae</h2><br>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+
+                    <div class="item izq">
+                        <h4>Ciencia y Tecnologia</h4>
+                        <span class="casa">Universidad de California</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Cultura</h4>
+                        <span class="casa">Universidad de California</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Teatro</h4>
+                        <span class="casa">Universidad de California</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus aque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2  class="prueba">Portfolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="img/encriptadorDeTexto.png" alt="">
+                    <div class="overlay">
+                        <h3>Front-End</h3>
+                        <p>Juego Interactivo</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/barberiaAlura.png" alt="">
+                    <div class="overlay">
+                        <h3>Front-End</h3>
+                        <p>Web-Site</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/ClinicaBuonaVita.png" alt="">
+                    <div class="overlay">
+                        <h3>JavaScript</h3>
+                        <p>Eventos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/flexbox_css.png" alt="">
+                    <div class="overlay">
+                        <h3>Front-End</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/fruta_fruto.png" alt="">
+                    <div class="overlay">
+                        <h3>Front-End</h3>
+                        <p>Diseño</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="img/layoutsMobileCSS3.png" alt="">
+                    <div class="overlay">
+                        <h3>Front-End</h3>
+                        <p>Web-Site</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2  class="prueba">Contacto</h2>
+            <div class="fila">
+
+
+                <!-- Formulario -->
+                <div class="col">
+                    
+                    <form action="/action_page.php" method="post">
+
+                        <label for="">Nombre</label>
+                        <input type="text" name="nombre"  placeholder="Ingrese su Nombre" required>
+
+                        <label for="">Número telefónico</label>
+                        <input type=tel name="Telefono" placeholder="Número telefónico">
+
+                        <label for="">Email</label>
+                        <input type="email" id="address" name="address" placeholder="Dirección de correo">
+
+                        <label for="">Tema</label>
+                        <input type="text" placeholder="Tema">
+
+                        <label for="">Mensaje</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                    <button>
+                        Enviar Mensaje<br>
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+
+                    
+
+                    </form>
+                    
+                </div>
+
+
+
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion_ok.png" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                                Av. Corrientes 22159
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 234-1234567 
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: mmm@example.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <a href="#"><i class="fa fa-globe" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa-brands fa-twitch"></i></a>
+        </div>
+        <p class="copyright">&copy Copyright Maldonado Martín - 2023</p>
+    </footer>
+
+
+
+
+
+
+
+    <!--BootsTrap-->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+
+
+    <!--archivo externo js-->
+    <script src="script.js"></script>
+
+</body>
+</html>
