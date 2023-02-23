@@ -6,17 +6,6 @@ const popoverList = [...popoverTriggerList].map(popoverTriggerEl =>
 
 
 
-// cambiar color de fondo o volver al anterior
-document.getElementById('boton_color_fondo').addEventListener('click', function () {
-    document.body.style.backgroundColor = '#D5F5E3';
-});
-
-document.getElementById('boton_color_fondo_dos').addEventListener('click', function
-    () {
-    document.body.style.backgroundColor = 'cornflowerblue';
-});
-
-
 //----------------------------------------
 
 
@@ -73,7 +62,17 @@ for (let i = 0; i < collection.length; i++) {
     collection[i].style.backgroundColor = '#0b504e';
 }
 
+// cambiar color de fondo o volver al anterior
+document.getElementById('boton_color_fondo').addEventListener
+('click', function () {
+    document.body.style.backgroundColor = '#D5F5E3';
+});
 
+document.getElementById('boton_color_fondo_dos').
+addEventListener('click', function
+    () {
+    document.body.style.backgroundColor = 'cornflowerblue';
+});
 
 
 
